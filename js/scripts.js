@@ -1,7 +1,7 @@
 function newItem() {
 
-  // //javascript
-  // //1. Adding a new item to the list of items:
+
+  //1. Adding a new item to the list of items:
   let list = $('<li></li>');
   let inputValue = $('#input').val()
   list.append(inputValue);
@@ -13,11 +13,7 @@ function newItem() {
   }
 
   //2. Crossing out an item from the list of items:
-  //    function crossOut() {
-  //  		li.classList.toggle("strike");
-  //  	}
 
-  //  	li.addEventListener("dblclick",crossOut);
   function crossOut() {
     list.classList.toggle('strike');
   }
@@ -32,7 +28,7 @@ function newItem() {
   list.append(crossOutButton);
 
   crossOutButton.on("click", deleteListItem);
-  // //3(ii). Adding CLASS DELETE (DISPLAY: NONE) from the css:
+  //3(ii). Adding CLASS DELETE (DISPLAY: NONE) from the css:
   function deleteListItem() {
     list.addClass("delete")
   }
